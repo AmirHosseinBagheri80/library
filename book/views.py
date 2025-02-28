@@ -3,7 +3,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 book_item=[
-    {"id":1,"name":"compound effect","writer":"darren hardey"}
+    {"id":1,"name":"compound effect","writer":"darren hardey"},
+    {"id":2,"name":"Mein Kampf","writer":"Adolf Hittler"}
 ]
 
 def books(request):
