@@ -20,5 +20,9 @@ def books(request):
         url=reverse('book-detail',args=[item['id']])
         data=data+f"<a href='{url}' target='_blank'>{item['name']}</a>"+"<br>"
     return HttpResponse(data)
+
+def standard_book_list(request):
+    return render(request,'book/list.html')
+
 def detail(request,id):
     return HttpResponse(f"book details of book:{id}")
